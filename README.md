@@ -1,6 +1,7 @@
 <h1>Color Palette Generator</h1>
 <p>This project is a simple, interactive web application designed to generate random hexadecimal (HEX) color palettes with a single button click. The main goal is to provide designers and developers with quick, refreshing inspiration for selecting color schemes for their websites or graphic designs.
 </p>
+<img width="1889" height="873" alt="p1" src="https://github.com/user-attachments/assets/60f355de-727e-4311-aaf2-54aa60bf2bc9" />
 
 <h1>Key Features</h1>
 <ul>
@@ -42,6 +43,7 @@
             </tr>
         </tbody>
     </table>
+
 </div>
 
 <h1>The Developer</h1>
