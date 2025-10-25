@@ -1,0 +1,122 @@
+/* Reset */
+@import url(https://fonts.googleapis.com/css?family=Inter:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
+/* Global values */
+:root {
+    --main-text: #3A3A3A;
+}
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Inter";
+} 
+body {
+    background: linear-gradient(135deg ,#F8F8F8, #E9EBF0);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+.container {
+    background-color: #F8F8F8;
+    border-radius: 15px;
+    padding: 30px;
+    width: 100%;
+    max-width: 800px;
+    box-shadow: 0px 10px 25px rgb(0, 0, 0, 0.1);
+}
+h1 {
+    color: var(--main-text);
+    text-align: center;
+    padding-bottom: 15px;
+    position: relative;
+}
+h1::after {
+    content: "";
+    position: absolute;
+    width: 50%;
+    height: 2px;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    background-color: #645CBB;
+    border-radius: 2px;
+}
+.grnerateBtn {
+    border: none;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 10px;
+    background: linear-gradient(135deg, #645CBB,#645cbbdf);
+    border-radius: 20px;
+    color: white;
+    font-weight: 600;
+    transition: all 0.s ease-in;
+}
+.grnerateBtn:hover {
+    background: linear-gradient(135deg,#645cbbdf, #645CBB);
+    transform: translateY(-2px);
+}
+.grnerateBtn:active {
+    transform: translateY(0px);
+}
+.colorContainer {
+    display: grid;
+    gap: 15px;
+    grid-template-columns: repeat(auto-fit, minmax(130px,1fr));
+}
+.color-box {
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0px 10px 25px rgb(0, 0, 0, 0.1);
+    transition: transform 0.1s;
+}
+.color-box:hover {
+    transform: translateY(-2px);
+}
+.color {
+    height: 120px;
+    cursor: pointer;
+}
+.color-info {
+    padding: 10px;
+    color: var(--main-text);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 14px;
+}
+
+.color-info .hex-value{
+    letter-spacing: 0.5px;
+    font-weight: 500;
+}
+.color-info i{
+    cursor: pointer;
+    color: gray;
+}
+.color-info i:hover {
+    color: #3C3A7F;
+}
+
+/* small */
+@media (min-width: 768px){
+    .container{
+        width: 750px;
+    }
+}
+
+/* medium */
+@media (min-width: 992px){
+    .container{
+        width: 970px;
+    }
+}
+
+/* large */
+@media (min-width: 1200px){
+    .container{
+        width: 1170px;
+    } 
+}
